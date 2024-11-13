@@ -20,3 +20,10 @@
   text-decoration: none;
   color: #666;
 }
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+  transition: background-color 0.3s, color 0.3s;
+}
