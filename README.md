@@ -100,3 +100,22 @@ Solution: I used the localStorage API to store the user's theme preference. The 
 
 Challenge 2: Ensuring that the dark mode toggle works seamlessly with the blog layout.
 Solution: I added a class to the body element to control the theme. The theme is toggled based on the button click, and I applied conditional styles for dark and light modes using CSS custom properties.
+
+
+Assignment-2
+Like Functionality:
+
+Implement a toggle for the like state, allowing the user to like or unlike the post. This includes updating the like count dynamically, ensuring the button changes between liked and unliked states.
+Provide visual feedback (e.g., color change or icon change) to show the current like state, making it clear to users whether they have liked the post or not.
+Ensure that the like state persists during the session, such that the user's like action is remembered even if the page is refreshed, using session storage or local storage.
+Comments Functionality:
+
+Allow users to add new comments, providing a text input or a form to submit their comment. Once submitted, the comment should be displayed in a list below the post.
+Implement a show/hide feature for the comment section, allowing users to toggle the visibility of comments for better readability. This can be a button or an accordion-like functionality.
+Include a timestamp for each comment to display when it was posted, showing the date and time of submission.
+Read More Functionality:
+
+Implement content truncation, where the post content is initially displayed in a shortened form (e.g., first 100 words), with an option to "Read More" for users to expand and view the full content.
+Ensure smooth content expansion with a seamless transition when the user clicks "Read More," expanding the content without causing any layout shift.
+Manage the expanded/collapsed state efficiently, so that if the user refreshes the page or navigates away, the state is remembered (whether the content is expanded or collapsed).
+![View](screenshot4.png)
