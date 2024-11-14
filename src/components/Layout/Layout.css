@@ -1,0 +1,56 @@
+/* Layout.css */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .layout__content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .layout__main {
+    flex: 3;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: auto;
+  }
+  
+  .layout__sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 100px); /* Keeps sidebar within view */
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 900px) {
+    .layout__content {
+      flex-direction: column;
+    }
+    
+    .layout__sidebar {
+      position: relative;
+      max-height: unset;
+    }
+  }
+  

@@ -1,0 +1,130 @@
+/* Base Light Mode Styles */
+.blog-post {
+  display: grid;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--background-color-light);
+  border: 1px solid var(--border-color-light);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.blog-post__header {
+  display: grid;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post__title {
+  font-size: 2rem;
+  color: var(--text-color-light);
+  margin-bottom: 0.5rem;
+}
+
+.blog-post__meta {
+  display: flex;
+  gap: 1rem;
+  color: var(--meta-text-color-light);
+  font-size: 0.9rem;
+}
+
+.blog-post__content {
+  line-height: 1.6;
+  color: var(--content-text-color-light);
+}
+
+.blog-post__expand {
+  color: var(--expand-btn-color-light);
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blog-post__expand:hover {
+  color: var(--expand-btn-hover-color-light);
+}
+
+/* Hover effect */
+.blog-post:hover {
+  transform: scale(1.02);
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  .blog-post {
+    background: var(--background-color-dark);
+    color: var(--text-color-dark);
+    border: 1px solid var(--border-color-dark);
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+  }
+
+  .blog-post__title {
+    color: var(--title-text-color-dark);
+  }
+
+  .blog-post__meta {
+    color: var(--meta-text-color-dark);
+  }
+
+  .blog-post__content {
+    color: var(--content-text-color-dark);
+  }
+
+  .blog-post__expand {
+    color: var(--expand-btn-color-dark);
+  }
+
+  .blog-post__expand:hover {
+    color: var(--expand-btn-hover-color-dark);
+  }
+}
+
+/* Define CSS variables for both Light and Dark modes */
+
+/* Light Mode Variables */
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #2c3e50;
+  --meta-text-color-light: #666666;
+  --content-text-color-light: #333333;
+  --expand-btn-color-light: #3498db;
+  --expand-btn-hover-color-light: #2980b9;
+  --border-color-light: #e0e0e0;
+  --title-text-color-light: #2c3e50;
+}
+
+/* Dark Mode Variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color-dark: #1e1e1e;
+    --text-color-dark: #e0e0e0;
+    --meta-text-color-dark: #aaaaaa;
+    --content-text-color-dark: #cccccc;
+    --expand-btn-color-dark: #70b5f9;
+    --expand-btn-hover-color-dark: #90caf9;
+    --border-color-dark: #333333;
+    --title-text-color-dark: #ffffff;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-post {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .blog-post__meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Meta info styling */
+.author,
+.date,
+.readTime {
+  font-style: italic;
+}

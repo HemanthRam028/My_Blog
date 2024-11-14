@@ -1,0 +1,89 @@
+/* Base styles for the Rich Text Editor */
+.rich-editor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  /* Toolbar styles */
+  .rich-editor__toolbar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Button styling */
+  .toolbar-button {
+    background: transparent;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .toolbar-button:hover {
+    color: #007bff;
+    transform: scale(1.1);
+  }
+  
+  .toolbar-button:focus {
+    outline: none;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  /* Textarea styling */
+  .rich-editor__content {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    box-sizing: border-box;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .rich-editor__content.error {
+    border-color: #dc3545;
+  }
+  
+  .rich-editor__content:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Error message styles */
+  .error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .rich-editor {
+      padding: 1rem;
+    }
+  
+    .rich-editor__toolbar {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  
+    .toolbar-button {
+      margin: 0.25rem;
+    }
+  }
+  

@@ -1,0 +1,95 @@
+/* Base styles for header */
+.blog-header {
+    padding: 1rem;
+    background-color: var(--background-color-light);
+    border-bottom: 1px solid var(--border-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .blog-header h1 {
+    margin: 0;
+    color: var(--text-color-light);
+    transition: color 0.3s;
+  }
+  
+  /* Navigation styles */
+  .blog-header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .blog-header nav a {
+    text-decoration: none;
+    color: var(--link-color-light);
+    transition: color 0.3s;
+  }
+  
+  /* Default light mode styles (for the body) */
+  :root {
+    --background-color-light: #f8f9fa;
+    --text-color-light: #333; /* Dark text for light mode */
+    --link-color-light: #0b0b0b;
+    --border-color-light: #040404;
+    --hover-background-color: #ddd;
+    --hover-text-color: #333;
+    --toggle-text-color-light: #000; /* Dark text color for light mode */
+  }
+  
+  /* Dark mode styles */
+  .dark-mode {
+    --background-color-light: #333;
+    --text-color-light: #f8f9fa; /* Light text for dark mode */
+    --link-color-light: #ddd;
+    --border-color-light: #444;
+    --hover-background-color: #666;
+    --hover-text-color: #fff;
+    --toggle-text-color-light: #fff; /* Light text color for dark mode */
+  }
+  
+  /* Toggle button styles */
+  .dark-mode-toggle {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--link-color-light);
+    border-radius: 4px;
+    color: var(--toggle-text-color-light); /* Default light mode text color */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Change toggle button text color when dark mode is active */
+  .dark-mode .dark-mode-toggle {
+    color: var(--toggle-text-color-light); /* Light text color in dark mode */
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: var(--hover-background-color);
+    color: var(--hover-text-color);
+  }
+  
+  /* Smooth hover effects */
+  .blog-header nav a:hover {
+    color: var(--text-color-light);
+  }
+  
+  .dark-mode .blog-header nav a:hover {
+    color: var(--text-color-ligth);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .blog-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .blog-header nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  

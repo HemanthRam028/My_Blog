@@ -1,0 +1,80 @@
+/* Base styles for blog list */
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    color: #333; /* Default text color for light mode */
+  }
+  
+  /* Styling for individual blog posts */
+  .blog-list .blog-post {
+    background-color: #f0e9e9; /* Light background for blog post */
+    border: 1px solid #f5f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s, color 0.3s;
+  }
+  
+  /* Heading or title inside the blog post */
+  .blog-list .blog-post h2 {
+    color: #000; /* Black color for heading in light mode */
+    background-color: #f0e9e9;
+  }
+  
+  /* Content, author, date, and read time in blog posts */
+  .blog-list .blog-post__content,
+  .blog-list .blog-post__author,
+  .blog-list .blog-post__date,
+  .blog-list .blog-post__read-time {
+    color: #333; /* Dark text color for light mode */
+  }
+  
+  /* Additional heading styles inside blog post */
+  .blog-list .blog-post h3 {
+    color: #000; /* Black color for h3 heading in light mode */
+    background-color: #f0e9e9;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode .blog-list .blog-post {
+    background-color: #333; /* Dark background for blog post in dark mode */
+    color: #f1f1f1; /* Light text for dark mode */
+    border: 1px solid #646363;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Dark mode heading styles */
+ 
+  
+  /* Content, author, date, and read time in dark mode */
+  body.dark-mode .blog-list .blog-post__content,
+  body.dark-mode .blog-list .blog-post__author,
+  body.dark-mode .blog-list .blog-post__date,
+  body.dark-mode .blog-list .blog-post__read-time {
+    color: #f1f1f1; /* Light text for content in dark mode */
+  }
+  
+  /* Hover effect */
+  .blog-list .blog-post:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .blog-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .blog-list {
+      padding: 0.5rem;
+    }
+    .blog-list .blog-post {
+      padding: 0.75rem;
+    }
+  }
+  
