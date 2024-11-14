@@ -132,3 +132,9 @@ PostEditor.jsx,TagInput.jsx,RichTextEditor.jsx
 
  Assignment 5
  In this also we see blank page after adding router/index.jsx,Layout.jsx,Navigation.jsx,Sidebar.jsx,NotFound.jsx files
+
+ Assignment 6
+ it is showing blank page after add files like usePosts.js,useForm.js,useAuth.js,useTheme.js,usePagination.js.
+
+ Assignment 7
+ it is showing blank after adding files like ThemeContext.jsx,PreferencesContext.jsx,BlogContext.jsx,AppProviders.jsx,Settings.jsx
