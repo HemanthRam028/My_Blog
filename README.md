@@ -122,4 +122,10 @@ Manage the expanded/collapsed state efficiently, so that if the user refreshes t
 
 
 Assignment3
- we didnot find any new change after code update. 
+PostEditor.jsx,TagInput.jsx,RichTextEditor.jsx
+ we didnot find any new change after code update. Because we need change in app.jsx so i check other files in upcoming files app.jsx is update i think after updatiing app.jsx we get ouput
+
+
+ Assignment4
+ useSearch.js,useFilters.js,BlogSearch.jsx,BlogFilters.jsx,Pagination.jsx, upadted BlogList.jsx
+ we get blank pagee i think we didnot update app.jsx so we need to change it upcoming assignments
