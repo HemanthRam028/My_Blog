@@ -119,3 +119,7 @@ Implement content truncation, where the post content is initially displayed in a
 Ensure smooth content expansion with a seamless transition when the user clicks "Read More," expanding the content without causing any layout shift.
 Manage the expanded/collapsed state efficiently, so that if the user refreshes the page or navigates away, the state is remembered (whether the content is expanded or collapsed).
 ![View](screenshot4.png)
+
+
+Assignment3
+ we didnot find any new change after code update. 
