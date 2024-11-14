@@ -138,3 +138,6 @@ PostEditor.jsx,TagInput.jsx,RichTextEditor.jsx
 
  Assignment 7
  it is showing blank after adding files like ThemeContext.jsx,PreferencesContext.jsx,BlogContext.jsx,AppProviders.jsx,Settings.jsx
+
+ Assignment 8
+ it is showing blank after adding files like Skeleton.jsx,Skeleton.css,PageTransition.jsx,LikeButton.jsx,AnimatedList.jsx,LoadingState.jsx
